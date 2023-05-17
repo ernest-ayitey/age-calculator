@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- <link rel="stylesheet" href="index.js"> -->
+  <title>Frontend Mentor | Age calculator app</title>
+    <script src="main.js" defer></script>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+    <section>
+      <form>
+        
+          <div class="general_error" role="group" aria-labelledby="day">
+            <label for="day" data-label="day">DAY</label>
+            <input type="number" id="day" name="day" placeholder="DD">
+            <small class="day_error" data-small="day"></small>
+          </div>
+          <div class="general_error" >
+            <label for="month" data-label="month">MONTH</label>
+            <input type="number" id="month" name="month" placeholder="MM">
+            <small class="month_error" data-small="month"></small>
+          </div>
+          <div class="general_error" role="group" aria-labelledby="year">
+            <label for="year" data-label="year">YEAR</label>
+            <input type="number" id="year" name="year" placeholder="YYYY">
+            <small class="year_error" data-small="year"></small>
+          </div>
+          <button type="submit" aria-label="Submit form">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+            </g>
+          </svg></button>
+        </form>
+          
+          <section class="results">
+            <h2><span data-birth-year>--</span><span>years</span></h2>
+            <h2><span data-birth-month>--</span><span>months</span></h2>
+            <h2><span data-birth-day>--</span><span>days</span></h2>
+          </section>
+        </section>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
